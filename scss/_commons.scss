@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+//font-family: 'Noto Sans', sans-serif; (Titulos)
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+//font-family: 'Rubik', sans-serif; (normal)
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+//font-family: 'Lobster', cursive; (Especial)
+
+//PRINCIPAL
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: $font-principal;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+//ETIQUETAS
+
+h1{
+    @include texto($text-title,$font-especial,$colorT);
+}
+
+h2{
+    @include texto($text-subtitle,$font-title,$colorT);
+}
+
+h3{
+    @include texto($text-big,$font-principal,$colorT);
+}
+
+h4{
+    @include texto($text-mid,$font-principal,$colorB);
+}
+
+h5{
+    @include texto($text_small,$font-principal,$colorB);
+}
+
+h6{
+    @include texto($text_small,$font-title,$colorB);
+}
+
+p{
+    @include texto($text-mid,$font-principal,$colorB);
+}

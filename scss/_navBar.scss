@@ -1,0 +1,14 @@
+.contNavBar{
+    padding: 10px 10px;
+}
+.navLinks{
+    font-size: 1.8rem;
+    font-family: $font-title;
+    color: $colorT;
+}
+.navLinks:hover{
+    color: rgb(122, 19, 19);
+    transform: scale(1.1);
+    transition: 0.5s;
+    margin: 5px 10px;
+}
