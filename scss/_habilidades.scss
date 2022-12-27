@@ -1,0 +1,40 @@
+.conTituloHab{
+    width: 100%;
+    height: 100%;
+    padding: 300px 0px;
+}
+.tituloHab{
+    padding-bottom: 10px;
+    font-family: $font-especial;
+    font-size: 7rem;
+    transform: rotate(-3deg);
+    text-align: center;
+}
+.contHabilidades{
+    @include flex(column, center, center, nowrap);
+    height: 100%;
+    width: 100%;
+    padding: 100px 0px;
+    background: linear-gradient(0deg, rgb(167, 164, 164) 0%, rgba(255,255,255,1) 100%);
+}
+.titulosHab{
+    font-size: 3rem;
+    font-family: $font-navbar;
+    color: $colorT;
+    margin: 30px 20px;
+    padding-bottom: 10px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+.subHab{
+    font-size: 2rem;
+    color:$colorB;
+}
+.contProgresos{
+    @include flex(row, center, start, wrap);
+}
+.contProgresos .divProgresos{
+    margin: 10px 20px;
+    padding: 20px 10px;
+    @include flex(column, center, space-evenly,wrap);
+}

@@ -9,67 +9,144 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary contNavBar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link navLinks" href="#">Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navLinks" href="#">Aptitudes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navLinks" href="#">Formación</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navLinks" href="#">Certificados</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navLinks" href="#">Experiencia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navLinks" href="#">Contacto</a>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
     <!-- foto de perfil e información -->
-    <section class="contInfo">
-        <div class="contFotoCv">
-            <img class="fotoCv" src="img/fotoDigital.jpg" alt="foto curriculumn">
-        </div>
-        <div class="infoFoto">
-            <h2 class="infoFotoTitle">¡Sobre mi!</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Qui ratione culpa placeat sit quod repellat suscipit? Nam porro
-                eaque architecto adipisci expedita laborum 
-                pariatur vitae quasi ipsa, exercitationem officia soluta!</p>
+    <section class="containerInfo">
+        <!-- NavBar -->
+        <nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary contNavBar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link navLinks navLinksBottom" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLinks navLinksBottom" href="#aptitudes">Aptitudes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLinks navLinksBottom" href="#formacion">Formación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLinks navLinksBottom" href="#certificados">Certificados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLinks navLinksBottom" href="#Experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLinks navLinksBottom" href="#Contacto">Contacto</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="contInfo">
+            <div class="contFotoCv col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <img class="fotoCv" src="img/fotoDigital.jpg" alt="foto curriculumn">
+            </div>
+            <div class="infoFoto col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <h2 class="infoFotoTitle">¡Sobre mi!</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Qui ratione culpa placeat sit quod repellat suscipit? Nam porro
+                    eaque architecto adipisci expedita laborum 
+                    pariatur vitae quasi ipsa, exercitationem officia soluta!</p>
+            </div>
         </div>
     </section>
     <!-- Habilidades -->
-    <section>
-        <div>
-            <!-- HTML -->
-            <!-- CSS -->
-            <!-- JAvascrip -->
-            <!-- Framework bootstrap -->
-            <!-- Diseños Responsive -->
-            <!-- GIT -->
-        </div>
+            <div id="habilidades" class="conTituloHab">
+                <h2 class="tituloHab">Habilidades</h2>
+            </div>
+            <section class="contHabilidades">
+                <div class="contProgresos">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 divProgresos">
+                        <h3 class="titulosHab">Tecnologías</h3>
+                        <div class="m-3">
+                            <h3>HTML</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="m-3">
+                            <h3>CSS</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="m-3">
+                            <h3>JavaScript</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="m-3">
+                            <h3>GIT</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 divProgresos">
+                            <h3 class="titulosHab">frameworks</h3>
+                            <div class="m-3">
+                                <h3>Bootstrap </h3>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="m-3">
+                                <h3>Tailwind CSS</h3>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 divProgresos">
+                        <h3 class="titulosHab">Diseño</h3>
+                        <div class="m-3">
+                            <h3>Habilidad con diseños responsives</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="m-3">
+                            <h3>SEO</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     </section>
     <!-- Aptitudes -->
     <!-- Formación -->
+    <section id="formacion" class="contFormacion">
+        <h2 class="tituloFormacion">Formación</h2>
+        <div class="contCards">
+            <!-- tecnicatura -->
+            <div class="card cardFlex">
+                <img class="card-img-top cardImg" src="img/formacion/electricidad.png" alt="Electricista">
+                <div class="card-body">
+                    <h3 class="tituloCards">Tecnicatura electricidad</h3>
+                    <h4 class="subTituloCards">2015 - 2020 / Colegio Técnico San José</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <!-- domestika -->
+            <!-- coderhouse desarrollo web -->
+            <!-- coderhouse JavaScript -->
+        </div>
+    </section>
     <!-- Certificados -->
+    <section id="certificados"></section>
     <!-- Experiencia Laboral -->
+    <section id="experiencia"></section>
     <!-- contacto -->
+    <section id="contacto"></section>
     <!-- SCRIPTS -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>

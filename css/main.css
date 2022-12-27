@@ -64,20 +64,45 @@ p {
 }
 
 .contNavBar {
-  padding: 10px 10px;
+  padding: 25px 20px;
+  background: rgba(0, 0, 0, 0) !important;
+  transition: 1s;
 }
 
 .navLinks {
   font-size: 1.8rem;
-  font-family: "Noto Sans", sans-serif;
-  color: rgb(20, 10, 20);
+  font-family: "Chakra Petch", sans-serif;
+  color: rgb(24, 0, 64);
+  padding: 10px 0px;
 }
 
 .navLinks:hover {
-  color: rgb(122, 19, 19);
+  color: rgb(203, 11, 11);
   transform: scale(1.1);
   transition: 0.5s;
   margin: 5px 10px;
+}
+
+/* navBar scroll */
+.navBarBottom {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  position: fixed !important;
+  z-index: 10 !important;
+  transition: 1s;
+  width: 100%;
+}
+
+.navBarBottom .navLinksBottom {
+  color: rgb(20, 10, 20);
+  transition: 1s;
+}
+
+.containerInfo {
+  background: linear-gradient(180deg, rgb(138, 136, 134) 0%, rgb(255, 255, 255) 100%);
+  height: 100%;
+  width: 100%;
 }
 
 .contInfo {
@@ -85,15 +110,8 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: nowrap;
-  background: linear-gradient(180deg, rgb(138, 136, 134) 0%, rgb(255, 255, 255) 100%);
-  height: 100vh;
-  width: 100%;
+  flex-wrap: wrap;
   padding: 100px 50px;
-}
-
-.contFotoCv {
-  margin: 70px;
 }
 
 .contFotoCv .fotoCv {
@@ -113,7 +131,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   padding: 50px 100px;
 }
 
@@ -125,6 +143,121 @@ p {
   font-family: "Lobster", cursive;
   font-size: 7rem;
   transform: rotate(-3deg);
+}
+
+.conTituloHab {
+  width: 100%;
+  height: 100%;
+  padding: 300px 0px;
+}
+
+.tituloHab {
+  padding-bottom: 10px;
+  font-family: "Lobster", cursive;
+  font-size: 7rem;
+  transform: rotate(-3deg);
+  text-align: center;
+}
+
+.contHabilidades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  padding: 100px 0px;
+  background: linear-gradient(0deg, rgb(167, 164, 164) 0%, rgb(255, 255, 255) 100%);
+}
+
+.titulosHab {
+  font-size: 3rem;
+  font-family: "Chakra Petch", sans-serif;
+  color: rgb(20, 10, 20);
+  margin: 30px 20px;
+  padding-bottom: 10px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.subHab {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.contProgresos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.contProgresos .divProgresos {
+  margin: 10px 20px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;
+  flex-wrap: wrap;
+}
+
+.contFormacion {
+  background: rgb(167, 164, 164);
+  padding: 50px 20px;
+}
+
+.tituloFormacion {
+  padding: 200px 0px;
+  font-family: "Lobster", cursive;
+  font-size: 7rem;
+  transform: rotate(-3deg);
+  text-align: center;
+}
+
+.contCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+}
+
+.cardFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.cardFlex .cardImg {
+  width: 500px;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.tituloCards {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3rem;
+  color: rgb(20, 10, 20);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.c {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.8rem;
+  color: rgb(71, 71, 71);
+  padding: 10px 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,12 +1,11 @@
-.contInfo{
-    @include flex(row, space-evenly, center, nowrap);
+.containerInfo{
     background: linear-gradient(180deg, rgba(138,136,134,1) 0%, rgba(255,255,255,1) 100%);
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    padding: 100px 50px;
 }
-.contFotoCv{
-    margin: 70px;
+.contInfo{
+    @include flex(row, space-evenly, center, wrap);
+    padding: 100px 50px;
 }
 .contFotoCv .fotoCv{
     width: 100%;
@@ -19,7 +18,7 @@
     transition: 1s;
 }
 .infoFoto{
-    @include flex(column, center, center, nowrap);
+    @include flex(column, center, center, wrap);
     padding: 50px 100px;
 }
 .infoFotoTitle{

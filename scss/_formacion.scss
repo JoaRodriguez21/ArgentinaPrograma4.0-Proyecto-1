@@ -1,0 +1,42 @@
+.contFormacion{
+    background: rgb(167, 164, 164);
+    padding: 50px 20px;
+}
+.tituloFormacion{
+    padding: 200px 0px;
+    font-family: $font-especial;
+    font-size: 7rem;
+    transform: rotate(-3deg);
+    text-align: center;
+}
+.contCards{
+    @include flex(column,center, center,wrap);
+    padding: 50px 20px;
+}
+.cardFlex{
+    @include flex(row, center, center, wrap);
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.cardFlex .cardImg{
+    width: 500px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.tituloCards{
+    font-family: $font-title;
+    font-size: 3rem;
+    color: $colorT;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.c{
+    font-family: $font-title;
+    font-size: 1.8rem;
+    color: $colorGC;
+    padding: 10px 20px;
+}
