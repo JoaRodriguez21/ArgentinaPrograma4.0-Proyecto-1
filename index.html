@@ -10,39 +10,46 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <!-- foto de perfil e información -->
-    <section class="containerInfo">
-        <!-- NavBar -->
-        <nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary contNavBar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!-- NavBar -->
+    <nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary contNavBar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link navLinks navLinksBottom" href="#habilidades">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navLinks navLinksBottom" href="#aptitudes">Aptitudes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navLinks navLinksBottom" href="#formacion">Formación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navLinks navLinksBottom" href="#certificados">Certificados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navLinks navLinksBottom" href="#Experiencia">Experiencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navLinks navLinksBottom" href="#Contacto">Contacto</a>
-                    </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+                    <a class="nav-link navLinks navLinksBottom" href="#habilidades">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navLinks navLinksBottom" href="#aptitudes">Aptitudes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navLinks navLinksBottom" href="#formacion">Formación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navLinks navLinksBottom" href="#certificados">Certificados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navLinks navLinksBottom" href="#Experiencia">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navLinks navLinksBottom" href="#Contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Inicio -->
+    <section class="inicioCont">
+        <div class="contTitle">
+            <h1 class="TituloTyped">Bienvenido a mi <span class="typed spanTitulo"></span></h1>
+            <p class="textSubTyped">A continuación veremos mi camino como desarrollador.</p>
+        </div>
+    </section>
+<!-- foto de perfil e información -->
+    <section class="containerInfo">
         <div class="contInfo">
             <div class="contFotoCv col-lg-3 col-md-6 col-sm-6 col-xs-6">
                 <img class="fotoCv" src="img/fotoDigital.jpg" alt="foto curriculumn">
@@ -57,10 +64,10 @@
         </div>
     </section>
     <!-- Habilidades -->
-            <div id="habilidades" class="conTituloHab">
-                <h2 class="tituloHab">Habilidades</h2>
-            </div>
-            <section class="contHabilidades">
+    <section class="contHabilidades">
+                <div id="habilidades" class="conTituloHab">
+                    <h2 class="tituloHab">Habilidades</h2>
+                </div>
                 <div class="contProgresos">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 divProgresos">
                         <h3 class="titulosHab">Tecnologías</h3>
@@ -122,7 +129,7 @@
                 </div>
     </section>
     <!-- Aptitudes -->
-    <!-- Formación -->
+    <!-- Formación --> METER GITHUB EN LAS CARDS
     <section id="formacion" class="contFormacion">
         <h2 class="tituloFormacion">Formación</h2>
         <div class="contCards">
@@ -172,9 +179,17 @@
             </div>
         </div>
     </section>
-    //ARREGLAR IMG CARDS
     <!-- Certificados -->
-    <section id="certificados"></section>
+    <section id="certificados" class="contCertificados">
+        <div>
+            <h2 class="tituloFormacion">Certificados</h2>
+        </div>
+        <div>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </section>
     <!-- Experiencia Laboral -->
     <section id="experiencia"></section>
     <!-- contacto -->
@@ -185,6 +200,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 
     <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="scripts/index.js"></script>
 
