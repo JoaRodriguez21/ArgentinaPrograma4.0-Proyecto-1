@@ -8,6 +8,9 @@
     <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> 
+    <link rel="stylesheet" href="path/to/fontawesome.min.css">
+
 </head>
 <body>
     <!-- NavBar -->
@@ -20,10 +23,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                     <li class="nav-item">
+                        <a class="nav-link navLinks navLinksBottom" href="#sobreMi">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-link navLinks navLinksBottom" href="#habilidades">Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navLinks navLinksBottom" href="#aptitudes">Aptitudes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link navLinks navLinksBottom" href="#formacion">Formación</a>
@@ -32,10 +35,10 @@
                     <a class="nav-link navLinks navLinksBottom" href="#certificados">Certificados</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navLinks navLinksBottom" href="#Experiencia">Experiencia</a>
+                    <a class="nav-link navLinks navLinksBottom" href="#experiencia">Experiencia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navLinks navLinksBottom" href="#Contacto">Contacto</a>
+                    <a class="nav-link navLinks navLinksBottom" href="#contacto">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -49,17 +52,19 @@
         </div>
     </section>
 <!-- foto de perfil e información -->
-    <section class="containerInfo">
+    <section id="sobreMi" class="containerInfo">
         <div class="contInfo">
-            <div class="contFotoCv col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                <img class="fotoCv" src="img/fotoDigital.jpg" alt="foto curriculumn">
+            <div  class="contFotoCv col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <img  id="botonPerfil" class="fotoCv" src="img/fotoDigital.jpg" alt="foto curriculumn">
+                <h2 class="nombreInfo">Joaquín Rodríguez</h2>
+                <h3 class="espInfo">Desarrollador Web</h3>
             </div>
             <div class="infoFoto col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <h2 class="infoFotoTitle">¡Sobre mi!</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Qui ratione culpa placeat sit quod repellat suscipit? Nam porro
-                    eaque architecto adipisci expedita laborum 
-                    pariatur vitae quasi ipsa, exercitationem officia soluta!</p>
+                <p>Soy Desarrollador Web con enfoque a la iterfaz de usuario.<br>
+                    Me considero una persona muy curiosa por lo cual estoy capacitandome y aprendiendo constantemente. Cuento con solidos conocimientos en HTML, CSS, JavaScript, WordPress y actualmente estoy formandome con el framework React JS para terminar la carrera de desarrollo frontend en Coder House. 
+                    Estoy capacitado para la resolución de problemas de forma responsable y paciente. Tengo un nivel de informatica avanzado por lo cual manejo con facilidad distintas variedades de software. Rápido aprendizaje y muy versatil lo cual me facilita la capacidad de adaptarme a diferentes sectores o funciones.
+                    En mis proyectos personales o hambientes laborales suelo destacar por las aptitudes mencionadas.</p>
             </div>
         </div>
     </section>
@@ -128,17 +133,41 @@
                     </div>
                 </div>
     </section>
-    <!-- Aptitudes -->
-    <!-- Formación --> METER GITHUB EN LAS CARDS
+    <!-- Proyectos -->
+    <section class="contProyectos">
+        <h2 class="tituloProyecto">Mis proyectos</h2>
+        <div class="contImgProy">
+            <div class="divImgTitles col-xs-10 col-sm-10 col-md-10 col-lg-2">
+                <h3 class="titulosImg">Proyecto inmobiliaria</h3>
+                <a href="https://inmobiliaria-rodriguez.000webhostapp.com/"><img class="imgButtonProy" type="button" src="img/proyectos/inmobiliaria-js.png" alt="proyecto de una inmobiliaria por joaquin rodriguez" ></a>
+            </div>
+            <div class="divImgTitles col-xs-10 col-sm-10 col-md-10 col-lg-2">
+                <h3 class="titulosImg">Proyecto aplicación web</h3>
+                <a href="https://joarodriguez21.github.io/cartillamenu/"><img class="imgButtonProy" type="button" src="img/proyectos/cafeteria-js.png" alt="Proyecto de una aplicación por Joaquin Rodriguez" ></a>
+            </div>
+            <div class="divImgTitles col-xs-10 col-sm-10 col-md-10 col-lg-2">
+                <h3 class="titulosImg">Prueba técnica<br>Contador con useState</h3>
+                <a href="https://codepen.io/JoaquinRodriguez/pen/LYBGzNp"><img class="imgButtonProy" type="button" src="img/proyectos/react-contador.png" alt="Proyecto realizado con react de un contador"></a>
+            </div>
+            <div class="divImgTitles col-xs-10 col-sm-10 col-md-10 col-lg-2">
+                <h3 class="titulosImg">Prueba técnica<br>Lista de tareas dínamica</h3>
+                <a href="https://codepen.io/JoaquinRodriguez/pen/OJwMOWq"><img class="imgButtonProy" type="link" src="img/proyectos/react-lista.png" alt="proyecto de una lista de tareas realizada con react"></a>
+            </div>
+        </div>
+    </section>
+    <!-- Formación -->
     <section id="formacion" class="contFormacion">
         <h2 class="tituloFormacion">Formación</h2>
         <div class="contCards">
             <!-- tecnicatura -->
             <div class="card cardFlex">
-                <div class="contCardImg col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                <div class="contCardImg col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <img class="card-img-top cardImg" src="img/formacion/electricidad.png" alt="Electricista">
                 </div>
-                <div class="card-body col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                <div class="contCards card-body col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                    <div class="contImgOrg">
+                        <img class="imgOrg" src="img/perfiles/logo-tecSanJose.jpg" alt="">
+                    </div>
                     <h3 class="tituloCards">Tecnicatura electricidad</h3>
                     <h4 class="subTituloCards">2015 - 2020 / Colegio Técnico San José</h4>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -146,10 +175,14 @@
             </div>
             <!-- domestika -->
             <div class="card cardFlex">
-                <div class="card-body col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                <div class="contCards card-body col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                    <div class="contImgOrg">
+                        <img class="imgOrg" src="img/perfiles/domestika.jpg" alt="">
+                    </div>
                     <h3 class="tituloCards">Diseño de páginas web con Wordpress</h3>
                     <h4 class="subTituloCards">2021 / Domestika</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">En la cursada aquirí los siguientes conocimientos: <br>
+                        Facebook Ads | Whatsapp Bussines | Instagram empresas- Chats automáticos | Analitica.</p>
                 </div>
                 <div class="contCardImg col-lg-5 col-md-12 col-sm-12 col-xs-12">
                     <img class="card-img-top cardImg" src="img/formacion/diseño-wordpress.jpg" alt="Diseño en wordpress">
@@ -157,44 +190,195 @@
             </div>
             <!-- coderhouse desarrollo web -->
             <div class="card cardFlex">
-                <div class="contCardImg col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                <div class="contCardImg col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <img class="card-img-top cardImg" src="img/formacion/desarrollo-web.png" alt="Desarrollador web">
                 </div>
-                <div class="card-body col-lg-5 col-md-12 col-sm-12 col-xs-12">
-                    <h3 class="tituloCards">Desarrollor Web</h3>
+                <div class="contCards card-body col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                    <div class="contImgOrg">
+                        <img class="imgOrg" src="img/perfiles/coderhouse.png" alt="">
+                    </div>
+                    <h3 class="tituloCards">Desarrollador Web</h3>
                     <h4 class="subTituloCards">2022 / Coder House</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">En esta cursada obtuve conocimientos en las siguientes tecnologías y herramientas:<br> 
+                        HTML | CSS | SASS | SEO | Responsive | Frameworks | GIT | GitHub | Editores de código | Boostrap | Servidores</p>
                 </div>
             </div>
             <!-- coderhouse JavaScript -->
             <div class="card cardFlex">
-                <div class="card-body col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                <div class="contCards card-body col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                    <div class="contImgOrg">
+                        <img class="imgOrg" src="img/perfiles/coderhouse.png" alt="">
+                    </div>
                     <h3 class="tituloCards">JavaScript</h3>
                     <h4 class="subTituloCards">2022 / Coder House</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">En la cursada obtuve conocimientos en las siguientes tecnologías y herramientas: <br>
+                        Funciones | DOM | JSON | Storage | eventos | librerías | asincronía | promesas | Ajax | fetch | NodeJS | Operadores avanzados.</p>
                 </div>
-                <div class="contCardImg col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                <div class="contCardImg col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <img class="card-img-top cardImg" src="img/formacion/programador.png" alt="Programador JavaScript">
                 </div>
             </div>
         </div>
     </section>
-    <!-- Certificados -->
-    <section id="certificados" class="contCertificados">
-        <div>
-            <h2 class="tituloFormacion">Certificados</h2>
-        </div>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+
+    <!-- Experiencia Laboral -->
+    <section id="experiencia" class="contExperiencia">
+        <h2 class="tituloFormacion">Experiencia Laboral</h2>
+        <div class="contCardsExp">
+            
+            <!-- Vomistar -->
+            <div class="card cardExp col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <div class="contCards card-body ">
+                    <div class="contImgOrg">
+                        <img class="imgOrg" src="img/experiencia/vomistar.png" alt="">
+                    </div>
+                    <h3 class="tituloCards"><strong>Telemarkéter</strong><br>Movistar</h3>
+                    <h4 class="subTituloCards">03/2021 - 08/2021</h4>
+                    <p class="card-text">Mis responsabilidades: <br>
+                        Atención al cliente. | Ventas de servicios de Movistar, fibra óptica y portabilidad. | Telemarketing | Diseño, Promociones y publicidad. | Estrategias de ventas.| Seguimiento de clientes</p>
+                </div>
+            </div>
+            <!-- Ropero -->
+            <div class="card cardExp col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <div class="contCards card-body ">
+                    <div class="contImgOrg">
+                        <img class="imgOrg" src="img/experiencia/RoperoAutomotores.jpg" alt="">
+                    </div>
+                    <h3 class="tituloCards"><strong>Community Manager - Marketing digital</strong><br>Ropero Automotores</h3>
+                    <h4 class="subTituloCards">03/2020 - 06/2022</h4>
+                    <p class="card-text">Mis responsabilidades:<br>
+                        Detailing vehicular. | Marketing digital de la empresa y gestión de medios sociales. | Ventas de automóviles. | Campaña en redes sociales. | Plataformas de anuncios.</p>
+                </div>
+            </div>
+            <!-- Compustore -->
+            <div class="card cardExp col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <div class="contCards card-body ">
+                    <div class="contImgOrg">
+                        <img class="imgOrg" src="img/experiencia/compuStore.png" alt="">
+                    </div>
+                    <h3 class="tituloCards"><strong>Manager</strong>(Freelance)<br>Compu Store MDZ</h3>
+                    <h4 class="subTituloCards">06/2020 - 01/2022</h4>
+                    <p class="card-text">Mis responsabilidades: <br> Ensamble de ordenadores. | Actualización de Hardware. | Instalación y actualización de sistemas operativos, drivers y software. | Cálculos de presupuestos. | Campaña en redes sociales. | Seguimiento de clientes para asegurar su satisfacción con el producto.</p>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- Experiencia Laboral -->
-    <section id="experiencia"></section>
     <!-- contacto -->
-    <section id="contacto"></section>
-
+    <section id="contacto" class="contContacto">
+        <h2 class="tituloContacto">Contacto</h2>
+        <div class="contCardContacto">
+            <div class="wrapper">
+                <div class="perfil-card js-perfil-card">
+                <div class="perfil-card__img">
+                    <img src="img/fotoDigital.jpg" alt="foto de perfil">
+                </div>
+              
+                <div class="perfil-card__cnt js-profile-cnt">
+                    <div class="perfil-card__nombre">Joaquín Rodríguez</div>
+                    <div class="perfil-card__textoInfo">Desarrollador frontend de <strong>Argentina</strong></div>
+                    <div class="perfil-card-loc">
+                        <span class="perfil-card-loc__icon">
+                        <svg class="icon"><use xlink:href="#icon-location"></use></svg>
+                        </span>
+              
+                        <span class="perfil-card-localidad__textoInfo">
+                        Mendoza, Argentina
+                        </span>
+                        </div>
+                        <div class="container p-4 pb-0">
+                            <!-- Section: Social media -->
+                            <section class="mb-4">
+                              <!-- Facebook -->
+                              <a
+                                class="redesIcons btn text-white btn-floating m-1"
+                                style="background-color: #3b5998;"
+                                href="#!"
+                                role="button"
+                                ><i class=" fab fa-facebook-f"></i
+                              ></a>
+                        
+                              <!-- Gmail -->
+                              <a
+                                class="redesIcons btn text-white btn-floating m-1"
+                                style="background-color: #dd4b39;"
+                                href="#!"
+                                role="button"
+                                ><i class="fab fa-google"></i
+                              ></a>
+                              <!-- whatsapp -->
+                              <a
+                                class="redesIcons btn text-white btn-floating m-1"
+                                style="background-color: #10c300;"
+                                href="#!"
+                                role="button"
+                                ><i class="fab fa-whatsapp"></i>
+                            </a>
+                              <!-- Instagram -->
+                              <a
+                                class="redesIcons btn text-white btn-floating m-1"
+                                style="background-color: #ac2bac;"
+                                href="#!"
+                                role="button"
+                                ><i class="fab fa-instagram"></i
+                              ></a>
+                              <!-- Linkedin -->
+                              <a
+                                class="redesIcons btn text-white btn-floating m-1"
+                                style="background-color: #0082ca;"
+                                href="#!"
+                                role="button"
+                                ><i class="fab fa-linkedin-in"></i
+                              ></a>
+                              <!-- Github -->
+                              <a
+                                class="redesIcons btn text-white btn-floating m-1"
+                                style="background-color: #333333;"
+                                href="#!"
+                                role="button"
+                                ><i class="fab fa-github"></i
+                              ></a>
+                            </section>
+                            <!-- Section: Social media -->
+                          </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <ul class="ulFooter">
+            <li  class="nav-item">
+                <a class="nav-link textFooter" href="#sobreMi">Sobre mi</a>
+            </li>
+            <li  class="nav-item">
+                <a class="nav-link textFooter" href="#habilidades">Habilidades</a>
+            </li>
+            <li  class="nav-item">
+                <a class="nav-link textFooter" href="#proyectos">Proyectos</a>
+            </li>
+            <li  class="nav-item">
+                <a class="nav-link textFooter" href="#formacion">Formación</a>
+            </li>
+            <li  class="nav-item">
+                <a class="nav-link textFooter" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link textFooter" href="#contacto">Contacto</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      Creado por:
+      <a class="text-white" href="https://mdbootstrap.com/">Joaquín Rodríguez</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
     <!-- CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>

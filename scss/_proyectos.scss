@@ -1,0 +1,34 @@
+.contProyectos{
+    height: 100%;
+    width: 100%;
+    background: rgba(167,164,164,1); 
+}
+.contImgProy{
+    @include flex(row, space-evenly, center, wrap);
+
+}
+.divImgTitles{
+    margin: 10px 10px;
+}
+.imgButtonProy{
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+.imgButtonProy:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.tituloProyecto{
+    padding: 200px 0px;
+    font-family: $font-especial;
+    font-size: 7rem;
+    transform: rotate(-3deg);
+    text-align: center;
+}
+.titulosImg{
+    font-family: $font-navbar;
+    font-size: 2rem;
+    margin: 10px 10px
+}

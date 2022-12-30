@@ -1,0 +1,14 @@
+.ulFooter{
+    @include flex(row, center, center, wrap);
+}
+.textFooter{
+    font-size: 2rem;
+    font-family: $font-navbar;
+    color: $colorW;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+.textFooter:hover{
+    color: rgb(240, 225, 12);
+    transition: 1s;
+}

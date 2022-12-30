@@ -1,0 +1,228 @@
+.contContacto{
+    @include flex(column, center, center, wrap);
+    background-color: rgb(47, 47, 47);
+    padding: 200px 20px;
+}
+.tituloContacto{
+    padding: 200px 0px;
+    font-family: $font-especial;
+    font-size: 7rem;
+    transform: rotate(-3deg);
+    text-align: center;
+    color: $colorW;
+}
+.contCardContacto{
+    width: 100%;
+    height: 100%;
+}
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+.wrapper {
+    @include flex(column, center, center, wrap);
+    width: 100%;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 50px 20px;
+    padding-top: 100px;
+    display: flex;
+  
+@media screen and (max-width: 768px) {
+      height: auto;
+      min-height: 100vh;
+      padding-top: 100px;
+    }
+  
+  }
+  
+.redesIcons{
+    width: 30px;
+    height: 30px;
+}
+.redesIcons:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+.perfil-card {
+    width: 100%;
+    min-height: 460px;
+    margin: auto;
+    box-shadow: 0px 8px 60px -10px rgba(13,28,39,0.6);
+    background: #fff;
+    border-radius: 12px;
+    max-width: 700px;
+    position: relative;
+  
+    &.active {
+      .perfil-card__cnt {
+        filter: blur(6px);
+      }
+  
+      .perfil-card-message,
+      .perfil-card__overlay {
+        opacity: 1;
+        pointer-events: auto;
+        transition-delay: .1s;
+      }
+  
+      .perfil-card-form {
+        transform: none;
+        transition-delay: .1s;
+      }
+    }
+  
+    &__img {
+      width: 200px;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      transform: translateY(-70%);
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      z-index: 4;
+      box-shadow: 0px 5px 50px 0px rgb(68, 197, 252), 0px 0px 0px 7px rgba(107, 74, 255, 0.5);
+  
+      @media screen and (max-width: 576px) {
+        width: 120px;
+        height: 120px;
+      }
+  
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+  
+    }
+  
+    &__cnt {
+      margin-top: -35px;
+      text-align: center;
+      padding: 0 20px;
+      padding-bottom: 40px;
+      transition: all .3s;
+    }
+  
+    &__nombre {
+      font-weight: 700;
+      font-size: 24px;
+      color: rgb(68, 197, 252);
+      margin-bottom: 20px;
+
+    }
+  
+    &__textoInfo {
+      font-size: 25px;
+      font-weight: 500;
+      color: #324e63;
+      margin-bottom: 20px;
+  
+      strong {
+        //color: #ff2846;
+        font-weight: 700;
+      }
+  
+    }
+  
+    &-localidad {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 600;
+      &__icon {
+        display: inline-flex;
+        font-size: 27px;
+        margin-right: 10px;
+        //color: #6944ff;
+      }
+  
+    }
+  
+    &-inf {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-top: 35px;
+  
+      &__item {
+        padding: 10px 35px;
+        min-width: 150px;
+  
+        @media screen and (max-width: 768px) {
+          padding: 10px 20px;
+          min-width: 120px;
+        }
+  
+      }
+  
+      &__title {
+        font-weight: 700;
+        font-size: 27px;
+        //color: #6944ff;
+        color: #324e63;
+      }
+  
+      &__txt {
+        font-weight: 500;
+        margin-top: 7px;
+      }
+  
+    }
+  
+    &-social {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  
+      &__item {
+        display: inline-flex;
+        width: 55px;
+        height: 55px;
+        margin: 15px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background: #405de6;
+        box-shadow: 0px 7px 30px rgba(43,98,169,0.5);
+        position: relative;
+        font-size: 21px;
+        flex-shrink: 0;
+        transition: all .3s;
+  
+        @media screen and (max-width: 768px) {
+          width: 50px;
+          height: 50px;
+          margin: 10px;
+        }
+  
+        @media screen and (min-width: 768px){
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+  
+        @media screen and (max-width: 576px) {
+          flex-wrap: wrap;
+        }
+  
+      }
+  
+    }
+  
+  }
+  
