@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> 
     <link rel="stylesheet" href="path/to/fontawesome.min.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- NavBar -->
@@ -29,10 +29,10 @@
                     <a class="nav-link navLinks navLinksBottom" href="#habilidades">Habilidades</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navLinks navLinksBottom" href="#formacion">Formación</a>
+                    <a class="nav-link navLinks navLinksBottom" href="#proyectos">Proyectos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navLinks navLinksBottom" href="#certificados">Certificados</a>
+                    <a class="nav-link navLinks navLinksBottom" href="#formacion">Formación</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link navLinks navLinksBottom" href="#experiencia">Experiencia</a>
@@ -54,14 +54,19 @@
 <!-- foto de perfil e información -->
     <section id="sobreMi" class="containerInfo">
         <div class="contInfo">
-            <div  class="contFotoCv col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                <img  id="botonPerfil" class="fotoCv" src="img/fotoDigital.jpg" alt="foto curriculumn">
-                <h2 class="nombreInfo">Joaquín Rodríguez</h2>
-                <h3 class="espInfo">Desarrollador Web</h3>
+            <div class="contFotoCv col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <img data-aos="fade-up"
+                     data-aos-duration="2000" id="botonPerfil" class="fotoCv" src="img/fotoDigital.jpg" alt="foto curriculumn">
+                <h2 data-aos="fade-up"
+                     data-aos-duration="1000" class="nombreInfo">Joaquín Rodríguez</h2>
+                <h3 data-aos="fade-up"
+                     data-aos-duration="500" class="espInfo">Desarrollador Web</h3>
             </div>
             <div class="infoFoto col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <h2 class="infoFotoTitle">¡Sobre mi!</h2>
-                <p>Soy Desarrollador Web con enfoque a la iterfaz de usuario.<br>
+                <h2 data-aos="fade-up"
+                     data-aos-duration="1000" class="infoFotoTitle">¡Sobre mi!</h2>
+                <p data-aos="fade-up"
+                     data-aos-duration="500" >Soy Desarrollador Web con enfoque a la iterfaz de usuario.<br>
                     Me considero una persona muy curiosa por lo cual estoy capacitandome y aprendiendo constantemente. Cuento con solidos conocimientos en HTML, CSS, JavaScript, WordPress y actualmente estoy formandome con el framework React JS para terminar la carrera de desarrollo frontend en Coder House. 
                     Estoy capacitado para la resolución de problemas de forma responsable y paciente. Tengo un nivel de informatica avanzado por lo cual manejo con facilidad distintas variedades de software. Rápido aprendizaje y muy versatil lo cual me facilita la capacidad de adaptarme a diferentes sectores o funciones.
                     En mis proyectos personales o hambientes laborales suelo destacar por las aptitudes mencionadas.</p>
@@ -71,10 +76,12 @@
     <!-- Habilidades -->
     <section class="contHabilidades">
                 <div id="habilidades" class="conTituloHab">
-                    <h2 class="tituloHab">Habilidades</h2>
+                    <h2 data-aos="fade-up"
+                         data-aos-duration="3000" class="tituloHab">Habilidades</h2>
                 </div>
                 <div class="contProgresos">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 divProgresos">
+                    <div data-aos="fade-up"
+                         data-aos-duration="3000" class="col-xs-12 col-sm-12 col-md-12 col-lg-3 divProgresos">
                         <h3 class="titulosHab">Tecnologías</h3>
                         <div class="m-3">
                             <h3>HTML</h3>
@@ -101,7 +108,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 divProgresos">
+                    <div data-aos="fade-up"
+                         data-aos-duration="2000" class="col-xs-12 col-sm-12 col-md-12 col-lg-3 divProgresos">
                             <h3 class="titulosHab">frameworks</h3>
                             <div class="m-3">
                                 <h3>Bootstrap </h3>
@@ -116,7 +124,8 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 divProgresos">
+                    <div data-aos="fade-up"
+                         data-aos-duration="1000" class="col-xs-12 col-sm-12 col-md-12 col-lg-3 divProgresos">
                         <h3 class="titulosHab">Diseño</h3>
                         <div class="m-3">
                             <h3>Habilidad con diseños responsives</h3>
@@ -135,21 +144,26 @@
     </section>
     <!-- Proyectos -->
     <section class="contProyectos">
-        <h2 class="tituloProyecto">Mis proyectos</h2>
+        <h2 data-aos="fade-up"
+             data-aos-duration="3000" class="tituloProyecto">Mis proyectos</h2>
         <div class="contImgProy">
-            <div class="divImgTitles col-xs-10 col-sm-10 col-md-10 col-lg-2">
+            <div data-aos="fade-up"
+                 data-aos-duration="4000" class="divImgTitles col-xs-10 col-sm-10 col-md-10 col-lg-2">
                 <h3 class="titulosImg">Proyecto inmobiliaria</h3>
                 <a href="https://inmobiliaria-rodriguez.000webhostapp.com/"><img class="imgButtonProy" type="button" src="img/proyectos/inmobiliaria-js.png" alt="proyecto de una inmobiliaria por joaquin rodriguez" ></a>
             </div>
-            <div class="divImgTitles col-xs-10 col-sm-10 col-md-10 col-lg-2">
+            <div data-aos="fade-up"
+                 data-aos-duration="3000" class="divImgTitles col-xs-10 col-sm-10 col-md-10 col-lg-2">
                 <h3 class="titulosImg">Proyecto aplicación web</h3>
                 <a href="https://joarodriguez21.github.io/cartillamenu/"><img class="imgButtonProy" type="button" src="img/proyectos/cafeteria-js.png" alt="Proyecto de una aplicación por Joaquin Rodriguez" ></a>
             </div>
-            <div class="divImgTitles col-xs-10 col-sm-10 col-md-10 col-lg-2">
+            <div data-aos="fade-up"
+                 data-aos-duration="2000" class="divImgTitles col-xs-10 col-sm-10 col-md-10 col-lg-2">
                 <h3 class="titulosImg">Prueba técnica<br>Contador con useState</h3>
                 <a href="https://codepen.io/JoaquinRodriguez/pen/LYBGzNp"><img class="imgButtonProy" type="button" src="img/proyectos/react-contador.png" alt="Proyecto realizado con react de un contador"></a>
             </div>
-            <div class="divImgTitles col-xs-10 col-sm-10 col-md-10 col-lg-2">
+            <div data-aos="fade-up"
+                 data-aos-duration="1000" class="divImgTitles col-xs-10 col-sm-10 col-md-10 col-lg-2">
                 <h3 class="titulosImg">Prueba técnica<br>Lista de tareas dínamica</h3>
                 <a href="https://codepen.io/JoaquinRodriguez/pen/OJwMOWq"><img class="imgButtonProy" type="link" src="img/proyectos/react-lista.png" alt="proyecto de una lista de tareas realizada con react"></a>
             </div>
@@ -157,10 +171,12 @@
     </section>
     <!-- Formación -->
     <section id="formacion" class="contFormacion">
-        <h2 class="tituloFormacion">Formación</h2>
+        <h2 data-aos="fade-up"
+             data-aos-duration="3000" class="tituloFormacion">Formación</h2>
         <div class="contCards">
             <!-- tecnicatura -->
-            <div class="card cardFlex">
+            <div data-aos="fade-up"
+                 data-aos-duration="3000" class="card cardFlex">
                 <div class="contCardImg col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <img class="card-img-top cardImg" src="img/formacion/electricidad.png" alt="Electricista">
                 </div>
@@ -174,7 +190,8 @@
                 </div>
             </div>
             <!-- domestika -->
-            <div class="card cardFlex">
+            <div data-aos="fade-up"
+                 data-aos-duration="3000" class="card cardFlex">
                 <div class="contCards card-body col-lg-5 col-md-12 col-sm-12 col-xs-12">
                     <div class="contImgOrg">
                         <img class="imgOrg" src="img/perfiles/domestika.jpg" alt="">
@@ -189,7 +206,8 @@
                 </div>
             </div>
             <!-- coderhouse desarrollo web -->
-            <div class="card cardFlex">
+            <div data-aos="fade-up"
+                 data-aos-duration="3000" class="card cardFlex">
                 <div class="contCardImg col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <img class="card-img-top cardImg" src="img/formacion/desarrollo-web.png" alt="Desarrollador web">
                 </div>
@@ -204,7 +222,8 @@
                 </div>
             </div>
             <!-- coderhouse JavaScript -->
-            <div class="card cardFlex">
+            <div data-aos="fade-up"
+                 data-aos-duration="3000" class="card cardFlex">
                 <div class="contCards card-body col-lg-5 col-md-12 col-sm-12 col-xs-12">
                     <div class="contImgOrg">
                         <img class="imgOrg" src="img/perfiles/coderhouse.png" alt="">
@@ -223,11 +242,13 @@
 
     <!-- Experiencia Laboral -->
     <section id="experiencia" class="contExperiencia">
-        <h2 class="tituloFormacion">Experiencia Laboral</h2>
+        <h2 data-aos="fade-up"
+             data-aos-duration="3000" class="tituloFormacion">Experiencia Laboral</h2>
         <div class="contCardsExp">
             
             <!-- Vomistar -->
-            <div class="card cardExp col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <div data-aos="fade-up"
+                 data-aos-duration="3000" class="card cardExp col-lg-3 col-md-12 col-sm-12 col-xs-12">
                 <div class="contCards card-body ">
                     <div class="contImgOrg">
                         <img class="imgOrg" src="img/experiencia/vomistar.png" alt="">
@@ -239,7 +260,8 @@
                 </div>
             </div>
             <!-- Ropero -->
-            <div class="card cardExp col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <div data-aos="fade-up"
+                 data-aos-duration="3000" class="card cardExp col-lg-3 col-md-12 col-sm-12 col-xs-12">
                 <div class="contCards card-body ">
                     <div class="contImgOrg">
                         <img class="imgOrg" src="img/experiencia/RoperoAutomotores.jpg" alt="">
@@ -251,7 +273,8 @@
                 </div>
             </div>
             <!-- Compustore -->
-            <div class="card cardExp col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <div data-aos="fade-up"
+                 data-aos-duration="3000" class="card cardExp col-lg-3 col-md-12 col-sm-12 col-xs-12">
                 <div class="contCards card-body ">
                     <div class="contImgOrg">
                         <img class="imgOrg" src="img/experiencia/compuStore.png" alt="">
@@ -265,27 +288,33 @@
     </section>
     <!-- contacto -->
     <section id="contacto" class="contContacto">
-        <h2 class="tituloContacto">Contacto</h2>
+        <h2 data-aos="fade-up"
+             data-aos-duration="3000" class="tituloContacto">Contacto</h2>
         <div class="contCardContacto">
-            <div class="wrapper">
+            <div data-aos="fade-up"
+                 data-aos-duration="3000" class="wrapper">
                 <div class="perfil-card js-perfil-card">
                 <div class="perfil-card__img">
                     <img src="img/fotoDigital.jpg" alt="foto de perfil">
                 </div>
               
                 <div class="perfil-card__cnt js-profile-cnt">
-                    <div class="perfil-card__nombre">Joaquín Rodríguez</div>
-                    <div class="perfil-card__textoInfo">Desarrollador frontend de <strong>Argentina</strong></div>
+                    <div data-aos="fade-up"
+                         data-aos-duration="2000" class="perfil-card__nombre">Joaquín Rodríguez</div>
+                    <div data-aos="fade-up"
+                         data-aos-duration="1000" class="perfil-card__textoInfo">Desarrollador frontend de <strong>Argentina</strong></div>
                     <div class="perfil-card-loc">
-                        <span class="perfil-card-loc__icon">
+                        <span data-aos="fade-up"
+                             data-aos-duration="2000" class="perfil-card-loc__icon">
                         <svg class="icon"><use xlink:href="#icon-location"></use></svg>
                         </span>
-              
-                        <span class="perfil-card-localidad__textoInfo">
+                        <span data-aos="fade-up"
+                             data-aos-duration="1000" class="perfil-card-localidad__textoInfo">
                         Mendoza, Argentina
                         </span>
                         </div>
-                        <div class="container p-4 pb-0">
+                        <div data-aos="fade-up"
+                             data-aos-duration="500" class="container p-4 pb-0">
                             <!-- Section: Social media -->
                             <section class="mb-4">
                               <!-- Facebook -->
@@ -386,7 +415,11 @@
     <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/index.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
